@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(245, 222, 179, 0.3);
+}
+
+header {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header h1 {
+  font-size: 4em;
+}
+header p {
+  font-size: 1.5em;
+}
+header #mini-flex-div {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  margin-top: 2vh;
+}
+header .ball {
+  width: 2em;
+  height: 2em;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+@keyframes flowing {
+  0% {
+    transform: scale(0) rotate(0deg);
+    border-radius: 0%;
+  }
+  25% {
+    transform: scale(1) rotate(180deg);
+    border-radius: 5%;
+  }
+  50% {
+    transform: scale(2) rotate(360deg);
+    border-radius: 50%;
+  }
+  75% {
+    transform: scale(1) rotate(180deg);
+    border-radius: 5%;
+  }
+  100% {
+    transform: scale(0) rotate(0deg);
+    border-radius: 0%;
+  }
+}
+header #purple {
+  background-color: #8915e8;
+  animation: flowing 2s linear 0s infinite;
+}
+header #orange {
+  background-color: #fac404;
+  animation: flowing 4s linear 0s infinite;
+}
+header #blue {
+  background-color: #3ce815;
+  animation: flowing 5s linear 0s infinite;
+}
+
+/*# sourceMappingURL=style.css.map */
