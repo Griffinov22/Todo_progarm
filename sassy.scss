@@ -135,10 +135,10 @@ header {
   margin-left: 4vw;
 
   .todo-div {
-    display: grid;
-    gap: 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 2fr 1fr;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     width: 25vw;
     border: 5px solid black;
@@ -146,7 +146,8 @@ header {
     border-radius: 5px;
   }
   .todo-div:nth-child(odd) {
-    background-color: #3ce815;
+    background-color: #fac404;
+    color: darkgreen;
   }
 
   .text-content {
@@ -154,15 +155,17 @@ header {
     font-family: $comfort-font;
     font-size: 1.5em;
     letter-spacing: 0.02em;
+    width: 90%;
   }
 
   .delete-btn {
-    text-align: right;
+    text-align: center;
     background: none;
     border: none;
     font-size: 2em;
-    padding: none;
     cursor: pointer;
+    padding-left: 5px;
+    // width: 20px;
   }
   .delete-btn:hover {
     color: rgb(250, 91, 91);
@@ -170,7 +173,7 @@ header {
   .date-p {
     align-self: flex-end;
     // margin-left: 2vh;
-    color: darkgreen;
+
     font-weight: 600;
     font-size: 1.1em;
     grid-column: 1 / span 3;

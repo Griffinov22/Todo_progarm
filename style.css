@@ -131,38 +131,39 @@ header #blue {
   margin-left: 4vw;
 }
 #output-section .todo-div {
-  display: grid;
-  gap: 0;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 2fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 25vw;
   border: 5px solid black;
   padding: 2ch;
   border-radius: 5px;
 }
 #output-section .todo-div:nth-child(odd) {
-  background-color: #3ce815;
+  background-color: #fac404;
+  color: darkgreen;
 }
 #output-section .text-content {
   align-self: center;
   font-family: "Comfortaa", cursive;
   font-size: 1.5em;
   letter-spacing: 0.02em;
+  width: 90%;
 }
 #output-section .delete-btn {
-  text-align: right;
+  text-align: center;
   background: none;
   border: none;
   font-size: 2em;
-  padding: none;
   cursor: pointer;
+  padding-left: 5px;
 }
 #output-section .delete-btn:hover {
   color: rgb(250, 91, 91);
 }
 #output-section .date-p {
   align-self: flex-end;
-  color: darkgreen;
   font-weight: 600;
   font-size: 1.1em;
   grid-column: 1/span 3;
