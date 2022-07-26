@@ -125,17 +125,23 @@ header #blue {
 }
 
 #output-section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
   margin-left: 4vw;
 }
 #output-section .todo-div {
   display: grid;
   gap: 0;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 2fr 1fr;
   width: 25vw;
   border: 5px solid black;
   padding: 2ch;
   border-radius: 5px;
+}
+#output-section .todo-div:nth-child(odd) {
+  background-color: #3ce815;
 }
 #output-section .text-content {
   align-self: center;
@@ -156,9 +162,10 @@ header #blue {
 }
 #output-section .date-p {
   align-self: flex-end;
-  margin-left: 2vh;
   color: darkgreen;
   font-weight: 600;
+  font-size: 1.1em;
+  grid-column: 1/span 3;
 }
 
 /*# sourceMappingURL=style.css.map */
