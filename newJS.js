@@ -74,3 +74,10 @@ class App {
   }
 }
 const app = new App();
+
+//changing placeholder
+console.log(window.outerHeight);
+
+if (window.outerWidth <= 600) {
+  writingArea.placeholder = "Let's do this...";
+}

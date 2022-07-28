@@ -34,6 +34,24 @@ header .ball {
   border: 1px solid black;
   border-radius: 50%;
 }
+@media (max-width: 600px) {
+  header {
+    margin-top: 0;
+  }
+  header h1 {
+    font-size: 2em;
+    text-align: center;
+    width: 90%;
+  }
+  header #mini-flex-div {
+    font-size: 0.75em;
+    width: 90%;
+    justify-content: space-between;
+  }
+  header p {
+    display: none;
+  }
+}
 @keyframes flowing {
   0% {
     transform: scale(0) rotate(0deg);
@@ -96,7 +114,7 @@ header #blue {
   margin-left: -60px;
   background: none;
   border: none;
-  font-size: 2em;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -105,6 +123,25 @@ header #blue {
   color: rgb(26, 74, 219);
 }
 
+@media (max-width: 600px) {
+  #writer-div {
+    margin-top: 5vh;
+    width: 100%;
+  }
+  #writer-div #writing-area {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  #form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .default-btn {
+    font-size: 25px;
+  }
+}
 #bottom-header {
   width: 40vw;
 }
@@ -124,6 +161,15 @@ header #blue {
   border: none;
 }
 
+@media (max-width: 600px) {
+  #output-h1 {
+    margin: 5vh 5vw !important;
+  }
+
+  #bottom-header {
+    width: 80vw;
+  }
+}
 #output-section {
   display: flex;
   flex-flow: row wrap;
@@ -158,6 +204,7 @@ header #blue {
   font-size: 2em;
   cursor: pointer;
   padding-left: 5px;
+  width: 10%;
 }
 #output-section .delete-btn:hover {
   color: rgb(250, 91, 91);
@@ -167,6 +214,16 @@ header #blue {
   font-weight: 600;
   font-size: 1.1em;
   grid-column: 1/span 3;
+}
+
+@media (max-width: 600px) {
+  #output-section {
+    width: 100%;
+  }
+
+  .todo-div {
+    width: 90vw !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

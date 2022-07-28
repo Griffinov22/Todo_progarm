@@ -34,6 +34,26 @@ header {
     border: 1px solid black;
     border-radius: 50%;
   }
+  @media (max-width: 600px) {
+    margin-top: 0;
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      width: 90%;
+    }
+    #mini-flex-div {
+      font-size: 0.75em;
+      width: 90%;
+      justify-content: space-between;
+    }
+    .ball {
+      // width: 1em;
+      // height: 1em;
+    }
+    p {
+      display: none;
+    }
+  }
   @keyframes flowing {
     0% {
       transform: scale(0) rotate(0deg);
@@ -92,19 +112,36 @@ header {
     padding: 0.5ch 4ch 0.5ch 1ch;
   }
 }
-
 .default-btn {
   height: 2em;
   width: 2em;
   margin-left: -60px;
   background: none;
   border: none;
-  font-size: 2em;
+  font-size: 20px;
   cursor: pointer;
 }
 .default-btn:hover,
 .default-btn:active {
   color: rgb(26, 74, 219);
+}
+@media (max-width: 600px) {
+  #writer-div {
+    margin-top: 5vh;
+    width: 100%;
+    #writing-area {
+      width: 80%;
+      font-size: 20px;
+    }
+  }
+  #form {
+    width: 100%;
+    text-align: center;
+  }
+  .default-btn {
+    // margin-right: 10px;
+    font-size: 25px;
+  }
 }
 
 #bottom-header {
@@ -125,6 +162,14 @@ header {
     transform: skewX(-45deg);
     background-color: grey;
     border: none;
+  }
+}
+@media (max-width: 600px) {
+  #output-h1 {
+    margin: 5vh 5vw !important;
+  }
+  #bottom-header {
+    width: 80vw;
   }
 }
 
@@ -165,7 +210,7 @@ header {
     font-size: 2em;
     cursor: pointer;
     padding-left: 5px;
-    // width: 20px;
+    width: 10%;
   }
   .delete-btn:hover {
     color: rgb(250, 91, 91);
@@ -177,5 +222,14 @@ header {
     font-weight: 600;
     font-size: 1.1em;
     grid-column: 1 / span 3;
+  }
+}
+
+@media (max-width: 600px) {
+  #output-section {
+    width: 100%;
+  }
+  .todo-div {
+    width: 90vw !important;
   }
 }
