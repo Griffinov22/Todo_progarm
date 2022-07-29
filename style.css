@@ -195,7 +195,7 @@ header #blue {
   font-family: "Comfortaa", cursive;
   font-size: 1.5em;
   letter-spacing: 0.02em;
-  width: 80%;
+  width: 75%;
 }
 #output-section .delete-btn {
   text-align: center;
@@ -214,10 +214,7 @@ header #blue {
   font-size: 1.1em;
 }
 
-@media screen and (max-width: 600px) {
-  #output-section {
-    width: 100%;
-  }
+@media (max-width: 600px) {
   #output-section .todo-div {
     width: 90vw;
   }

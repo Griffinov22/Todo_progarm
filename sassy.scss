@@ -201,7 +201,7 @@ header {
     font-family: $comfort-font;
     font-size: 1.5em;
     letter-spacing: 0.02em;
-    width: 80%;
+    width: 75%;
   }
 
   .delete-btn {
@@ -224,9 +224,9 @@ header {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   #output-section {
-    width: 100%;
+    // width: 100%;
     .todo-div {
       width: 90vw;
     }
