@@ -218,11 +218,10 @@ header #blue {
 
 @media (max-width: 600px) {
   #output-section {
-    width: 100% !important;
+    width: 100%;
   }
-
-  .todo-div {
-    width: 90vw !important;
+  #output-section .todo-div {
+    width: 90vw;
   }
 }
 
