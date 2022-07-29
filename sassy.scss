@@ -181,6 +181,7 @@ header {
 
   .todo-div {
     display: flex;
+
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -227,7 +228,7 @@ header {
 
 @media (max-width: 600px) {
   #output-section {
-    width: 100%;
+    width: 100% !important;
   }
   .todo-div {
     width: 90vw !important;
