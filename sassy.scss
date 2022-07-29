@@ -218,15 +218,13 @@ header {
   }
   .date-p {
     align-self: flex-end;
-    // margin-left: 2vh;
 
     font-weight: 600;
     font-size: 1.1em;
-    grid-column: 1 / span 3;
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #output-section {
     width: 100%;
     .todo-div {
